@@ -14,9 +14,9 @@ function validateTriangle(){
 
     if(sumofAngles=== 180)
     {
-        outputDiv.innerText="Yay, the angles form a Triangle";
+        outputDiv.innerText="Yay, the Angles form a Triangle";
     }else{
-        outputDiv.innerText="Nah, the angles do not form a Triangle";
+        outputDiv.innerText="Nah, the Angles do not form a Triangle";
     }
 }
 

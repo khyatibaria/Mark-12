@@ -104,6 +104,12 @@ label,p,input{
     background-color:#262A53;
 }
 
+#output{
+        padding: 1rem;
+        font-size: 2rem;
+        color: #262A53;
+}
+
 .footer {
     background-color: #262A53;
     padding: 4rem 1rem;
