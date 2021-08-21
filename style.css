@@ -60,25 +60,30 @@
     margin-top: 5rem;
 
 }
-.quiz-label{
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0.5rem;
-}
-
-.quiz-input{
-  
-    font-weight: bold;
-
+.container-quiz{
+    background-color: #FFE3E3;
+    text-align: justify;
+    max-width: 600px;
+    min-height: 200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    margin-top: 5rem;
 
 }
-label {
+label,p,input{
+    margin: auto;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+.label-input {
     font-size: 22px;
     font-weight: bold;
     padding: 1.5rem;
 }
 
-input {
+.input-field {
     width: 60%;
     padding:0.5rem;
     height: 25px;
@@ -88,7 +93,7 @@ input {
     margin-right: auto;
 }
 
-button {
+.input-btn {
     padding: 0.5rem 1rem;
     display: block;
     font-size: 1rem;
