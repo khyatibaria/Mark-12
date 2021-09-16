@@ -10,14 +10,22 @@ function findSum(angle1,angle2,angle3)
 
 function validateTriangle(){
 
-    var sumofAngles= findSum(Number(input[0].value),Number(input[1].value),Number(input[2].value))
+    if(input[0].value>0 && input[1].value>0 && input[2].value){
 
-    if(sumofAngles=== 180)
-    {
-        outputDiv.innerText="Yay, the Angles form a Triangle";
-    }else{
-        outputDiv.innerText="Nah, the Angles do not form a Triangle";
+        var sumofAngles= findSum(Number(input[0].value),Number(input[1].value),Number(input[2].value))
+
+        if(sumofAngles=== 180)
+        {
+            outputDiv.innerText="Yay, the Angles form a Triangle";
+        }else{
+            outputDiv.innerText="Nah, the Angles do not form a Triangle";
+        }
     }
+    else{
+        outputDiv.innerText="Please Enter Positive Values";
+    }
+
+   
 }
 
 istriangleBtn.addEventListener('click', validateTriangle)

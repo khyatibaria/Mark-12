@@ -11,10 +11,17 @@ function sumofSquares(side1,side2)
 
 function calculateHypo (){
 
-    var squares=sumofSquares(Number(sides[0].value,),Number(sides[1].value,));
-    var hypotenuse= Math.sqrt(squares);
-    
-    outputDiv.innerText="The calculated value of Hypotenus is"+hypotenuse;
+    if(sides[0].value>0 && sides[1].value>0)
+    {
+        var squares=sumofSquares(Number(sides[0].value,),Number(sides[1].value,));
+        var hypotenuse= Math.sqrt(squares);
+        
+        outputDiv.innerText="The calculated value of Hypotenus is"+hypotenuse;
+    }
+    else{
+        outputDiv.innerText="Please Enter Positive Values";
+    }
+
 }
 
 checkHypoBtn.addEventListener('click',calculateHypo)
